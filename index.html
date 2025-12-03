@@ -33,6 +33,170 @@
             pointer-events: none;
         }
         
+        /* ========== ANIMASI BUNGA SAKURA ========== */
+        .sakura-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .sakura {
+            position: absolute;
+            top: -50px;
+            opacity: 0.7;
+            animation: fall linear infinite;
+        }
+        
+        .sakura1 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='%23ffb7c5' d='M15,5 C18,5 21,7 21,10 C21,13 18,15 15,15 C12,15 9,13 9,10 C9,7 12,5 15,5 Z M5,15 C8,15 11,17 11,20 C11,23 8,25 5,25 C2,25 -1,23 -1,20 C-1,17 2,15 5,15 Z M25,15 C28,15 31,17 31,20 C31,23 28,25 25,25 C22,25 19,23 19,20 C19,17 22,15 25,15 Z'/%3E%3C/svg%3E");
+            width: 30px;
+            height: 30px;
+            background-size: contain;
+            animation-duration: 15s;
+            animation-delay: 0s;
+        }
+        
+        .sakura2 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23ff99ac' d='M12.5,4 C15,4 17,6 17,8.5 C17,11 15,13 12.5,13 C10,13 8,11 8,8.5 C8,6 10,4 12.5,4 Z M4,13 C6.5,13 8.5,15 8.5,17.5 C8.5,20 6.5,22 4,22 C1.5,22 -0.5,20 -0.5,17.5 C-0.5,15 1.5,13 4,13 Z M21,13 C23.5,13 25.5,15 25.5,17.5 C25.5,20 23.5,22 21,22 C18.5,22 16.5,20 16.5,17.5 C16.5,15 18.5,13 21,13 Z'/%3E%3C/svg%3E");
+            width: 25px;
+            height: 25px;
+            background-size: contain;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+        
+        .sakura3 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Cpath fill='%23ffd6e0' d='M10,3 C12,3 14,5 14,7 C14,9 12,11 10,11 C8,11 6,9 6,7 C6,5 8,3 10,3 Z M3,11 C5,11 7,13 7,15 C7,17 5,19 3,19 C1,19 -1,17 -1,15 C-1,13 1,11 3,11 Z M17,11 C19,11 21,13 21,15 C21,17 19,19 17,19 C15,19 13,17 13,15 C13,13 15,11 17,11 Z'/%3E%3C/svg%3E");
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            animation-duration: 18s;
+            animation-delay: 5s;
+        }
+        
+        .sakura4 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 35 35'%3E%3Cpath fill='%23ffb7c5' d='M17.5,6 C20.5,6 23,8 23,11 C23,14 20.5,16 17.5,16 C14.5,16 12,14 12,11 C12,8 14.5,6 17.5,6 Z M6,16 C9,16 12,18 12,21 C12,24 9,26 6,26 C3,26 0,24 0,21 C0,18 3,16 6,16 Z M29,16 C32,16 35,18 35,21 C35,24 32,26 29,26 C26,26 23,24 23,21 C23,18 26,16 29,16 Z'/%3E%3C/svg%3E");
+            width: 35px;
+            height: 35px;
+            background-size: contain;
+            animation-duration: 20s;
+            animation-delay: 7s;
+        }
+        
+        .sakura5 {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cpath fill='%23ff99ac' d='M9,3 C11,3 13,5 13,7 C13,9 11,11 9,11 C7,11 5,9 5,7 C5,5 7,3 9,3 Z M2,11 C4,11 6,13 6,15 C6,17 4,19 2,19 C0,19 -2,17 -2,15 C-2,13 0,11 2,11 Z M16,11 C18,11 20,13 20,15 C20,17 18,19 16,19 C14,19 12,17 12,15 C12,13 14,11 16,11 Z'/%3E%3C/svg%3E");
+            width: 18px;
+            height: 18px;
+            background-size: contain;
+            animation-duration: 14s;
+            animation-delay: 3s;
+        }
+        
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 0.8;
+            }
+            10% {
+                transform: translateY(10vh) translateX(10px) rotate(36deg);
+                opacity: 0.8;
+            }
+            20% {
+                transform: translateY(20vh) translateX(-15px) rotate(72deg);
+                opacity: 0.7;
+            }
+            30% {
+                transform: translateY(30vh) translateX(20px) rotate(108deg);
+                opacity: 0.7;
+            }
+            40% {
+                transform: translateY(40vh) translateX(-10px) rotate(144deg);
+                opacity: 0.6;
+            }
+            50% {
+                transform: translateY(50vh) translateX(15px) rotate(180deg);
+                opacity: 0.6;
+            }
+            60% {
+                transform: translateY(60vh) translateX(-20px) rotate(216deg);
+                opacity: 0.5;
+            }
+            70% {
+                transform: translateY(70vh) translateX(10px) rotate(252deg);
+                opacity: 0.4;
+            }
+            80% {
+                transform: translateY(80vh) translateX(-15px) rotate(288deg);
+                opacity: 0.3;
+            }
+            90% {
+                transform: translateY(90vh) translateX(20px) rotate(324deg);
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(100vh) translateX(-10px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        /* Animasi bunga berputar di tempat */
+        .floating-sakura {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1;
+            animation: floatRotate 8s ease-in-out infinite;
+        }
+        
+        @keyframes floatRotate {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+        }
+        
+        .floating-sakura-1 {
+            top: 10%;
+            left: 5%;
+            width: 40px;
+            height: 40px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath fill='%23ffb7c5' fill-opacity='0.6' d='M20,8 C24,8 28,11 28,15 C28,19 24,22 20,22 C16,22 12,19 12,15 C12,11 16,8 20,8 Z M8,22 C12,22 16,25 16,29 C16,33 12,36 8,36 C4,36 0,33 0,29 C0,25 4,22 8,22 Z M32,22 C36,22 40,25 40,29 C40,33 36,36 32,36 C28,36 24,33 24,29 C24,25 28,22 32,22 Z'/%3E%3C/svg%3E");
+            animation-delay: 0s;
+        }
+        
+        .floating-sakura-2 {
+            top: 15%;
+            right: 8%;
+            width: 30px;
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath fill='%23ffd6e0' fill-opacity='0.5' d='M15,6 C18,6 21,8 21,11 C21,14 18,16 15,16 C12,16 9,14 9,11 C9,8 12,6 15,6 Z M6,16 C9,16 12,18 12,21 C12,24 9,26 6,26 C3,26 0,24 0,21 C0,18 3,16 6,16 Z M24,16 C27,16 30,18 30,21 C30,24 27,26 24,26 C21,26 18,24 18,21 C18,18 21,16 24,16 Z'/%3E%3C/svg%3E");
+            animation-delay: 2s;
+        }
+        
+        .floating-sakura-3 {
+            bottom: 20%;
+            left: 10%;
+            width: 35px;
+            height: 35px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='35' viewBox='0 0 35 35'%3E%3Cpath fill='%23ff99ac' fill-opacity='0.4' d='M17.5,7 C21,7 24,9 24,12.5 C24,16 21,18 17.5,18 C14,18 11,16 11,12.5 C11,9 14,7 17.5,7 Z M7,18 C10.5,18 13.5,20 13.5,23.5 C13.5,27 10.5,29 7,29 C3.5,29 0.5,27 0.5,23.5 C0.5,20 3.5,18 7,18 Z M28,18 C31.5,18 34.5,20 34.5,23.5 C34.5,27 31.5,29 28,29 C24.5,29 21.5,27 21.5,23.5 C21.5,20 24.5,18 28,18 Z'/%3E%3C/svg%3E");
+            animation-delay: 4s;
+        }
+        
+        .floating-sakura-4 {
+            bottom: 15%;
+            right: 15%;
+            width: 25px;
+            height: 25px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25'%3E%3Cpath fill='%23ffb7c5' fill-opacity='0.3' d='M12.5,5 C15,5 17,7 17,9.5 C17,12 15,14 12.5,14 C10,14 8,12 8,9.5 C8,7 10,5 12.5,5 Z M5,14 C7.5,14 9.5,16 9.5,18.5 C9.5,21 7.5,23 5,23 C2.5,23 0.5,21 0.5,18.5 C0.5,16 2.5,14 5,14 Z M20,14 C22.5,14 24.5,16 24.5,18.5 C24.5,21 22.5,23 20,23 C17.5,23 15.5,21 15.5,18.5 C15.5,16 17.5,14 20,14 Z'/%3E%3C/svg%3E");
+            animation-delay: 6s;
+        }
+        
         /* ========== ORNAMENT DEKORATIF KOMPLIT ========== */
         /* Ornament corner - pojok halaman */
         .ornament-corner {
@@ -176,55 +340,6 @@
             border-right: 1px solid #8b7355;
         }
         
-        /* Ornament floating elements */
-        .floating-ornament {
-            position: fixed;
-            z-index: 5;
-            pointer-events: none;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(5deg); }
-        }
-        
-        .ornament-1 {
-            top: 15%;
-            left: 10%;
-            width: 40px;
-            height: 40px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%238b7355' d='M20,5 C25,5 30,8 30,13 C30,18 25,21 20,21 C15,21 10,18 10,13 C10,8 15,5 20,5 Z M8,20 C12,20 16,23 16,27 C16,31 12,34 8,34 C4,34 0,31 0,27 C0,23 4,20 8,20 Z M32,20 C36,20 40,23 40,27 C40,31 36,34 32,34 C28,34 24,31 24,27 C24,23 28,20 32,20 Z'/%3E%3C/svg%3E");
-        }
-        
-        .ornament-2 {
-            top: 25%;
-            right: 8%;
-            width: 35px;
-            height: 35px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 35 35'%3E%3Cpath fill='none' stroke='%238b7355' stroke-width='1.5' d='M17.5,5 C22,5 26,8 26,12 C26,16 22,19 17.5,19 C13,19 9,16 9,12 C9,8 13,5 17.5,5 Z M5,20 C9,20 13,23 13,27 C13,31 9,34 5,34 C1,34 -3,31 -3,27 C-3,23 1,20 5,20 Z M30,20 C34,20 38,23 38,27 C38,31 34,34 30,34 C26,34 22,31 22,27 C22,23 26,20 30,20 Z'/%3E%3C/svg%3E");
-            animation-delay: 2s;
-        }
-        
-        .ornament-3 {
-            bottom: 30%;
-            left: 5%;
-            width: 30px;
-            height: 30px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Ccircle cx='15' cy='15' r='12' fill='none' stroke='%238b7355' stroke-width='1.5'/%3E%3Ccircle cx='15' cy='15' r='6' fill='%238b7355' opacity='0.6'/%3E%3C/svg%3E");
-            animation-delay: 4s;
-        }
-
-        .ornament-4 {
-            bottom: 20%;
-            right: 15%;
-            width: 25px;
-            height: 25px;
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25'%3E%3Cpath fill='%238b7355' d='M12.5,2 C16,2 19,4 19,7 C19,10 16,12 12.5,12 C9,12 6,10 6,7 C6,4 9,2 12.5,2 Z M3,13 C6,13 9,15 9,18 C9,21 6,23 3,23 C0,23 -3,21 -3,18 C-3,15 0,13 3,13 Z M22,13 C25,13 28,15 28,18 C28,21 25,23 22,23 C19,23 16,21 16,18 C16,15 19,13 22,13 Z'/%3E%3C/svg%3E");
-            animation-delay: 1s;
-        }
-        
         /* Ornament border untuk card */
         .ornament-card {
             position: relative;
@@ -364,22 +479,6 @@
             width: 50px;
             height: 2px;
             background: linear-gradient(90deg, transparent, #8b7355, transparent);
-        }
-
-        /* Ornament music control */
-        .music-ornament {
-            position: relative;
-        }
-
-        .music-ornament::before {
-            content: '♪';
-            position: absolute;
-            top: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #8b7355;
-            opacity: 0.3;
-            font-size: 16px;
         }
 
         /* Loading Screen */
@@ -969,40 +1068,6 @@
             font-size: 14px;
         }
         
-        /* Music Controls - Sederhana dan Minimalis */
-        .music-controls {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            z-index: 10000;
-            display: flex;
-            gap: 10px;
-            background: rgba(255, 248, 240, 0.95);
-            padding: 10px 15px;
-            border-radius: 0;
-            box-shadow: 0 3px 10px rgba(139,115,85,0.2);
-            border: 1px solid #f0ebe4;
-        }
-        
-        .music-btn {
-            width: 40px;
-            height: 40px;
-            border-radius: 0;
-            border: none;
-            background: #8b7355;
-            color: white;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 14px;
-            transition: all 0.3s ease;
-        }
-        
-        .music-btn:hover {
-            background: #6d5a42;
-        }
-        
         .divider {
             width: 80px;
             height: 1px;
@@ -1567,8 +1632,15 @@
                 height: 50px;
             }
             
-            .floating-ornament {
-                display: none;
+            /* Kurangi jumlah bunga sakura di mobile */
+            .sakura {
+                width: 15px !important;
+                height: 15px !important;
+            }
+            
+            .floating-sakura {
+                width: 20px !important;
+                height: 20px !important;
             }
         }
 
@@ -1631,6 +1703,17 @@
     <!-- Background Batik -->
     <div class="batik-background"></div>
     
+    <!-- ========== ANIMASI BUNGA SAKURA ========== -->
+    <div class="sakura-container" id="sakuraContainer">
+        <!-- Bunga sakura akan dibuat dengan JavaScript -->
+    </div>
+    
+    <!-- Bunga sakura melayang di tempat -->
+    <div class="floating-sakura floating-sakura-1"></div>
+    <div class="floating-sakura floating-sakura-2"></div>
+    <div class="floating-sakura floating-sakura-3"></div>
+    <div class="floating-sakura floating-sakura-4"></div>
+    
     <!-- ========== ORNAMENT DEKORATIF KOMPLIT ========== -->
     <!-- Ornament Corner -->
     <div class="ornament-corner ornament-top-left"></div>
@@ -1643,12 +1726,6 @@
     <div class="floral-corner floral-top-right"></div>
     <div class="floral-corner floral-bottom-left"></div>
     <div class="floral-corner floral-bottom-right"></div>
-    
-    <!-- Floating Ornaments -->
-    <div class="floating-ornament ornament-1"></div>
-    <div class="floating-ornament ornament-2"></div>
-    <div class="floating-ornament ornament-3"></div>
-    <div class="floating-ornament ornament-4"></div>
     
     <!-- Loading Screen -->
     <div id="loadingScreen" class="loading-screen">
@@ -1789,7 +1866,7 @@
                 <div class="event-details">
                     <div class="event-card ornament-card">
                         <div class="event-date">Minggu, 14 Desember 2025</div>
-                        <div class="event-time">08.00 - Selesai</div>
+                        <div class="event-time">08:00 - 12:00 WIB</div>
                         <div class="event-location">
                             <strong>Akad Nikah</strong>
                             Kantor Kalurahan Nglegi, Patuk, Gunungkidul<br>
@@ -1802,7 +1879,7 @@
                     </div>
                     <div class="event-card ornament-card">
                         <div class="event-date">Minggu, 14 Desember 2025</div>
-                        <div class="event-time">14.00 - Selesai</div>
+                        <div class="event-time">18:00 - 21:00 WIB</div>
                         <div class="event-location">
                             <strong>Ngunduh Mantu</strong>
                             Rumah Keluarga Besar Bapak Rubino F.<br>
@@ -2092,23 +2169,16 @@
         </div>
     </div>
 
-    <!-- Kontrol Musik - Minimalis -->
-    <div id="musicControls" class="music-controls hidden music-ornament">
-        <button id="playPauseBtn" class="music-btn">⏸️</button>
-        <button id="stopBtn" class="music-btn">⏹️</button>
-    </div>
-
     <!-- Notifikasi Salin -->
     <div id="copyNotification" class="copy-notification">
         ✅ Berhasil disalin ke clipboard
     </div>
 
     <script>
-        // ========== KONFIGURASI YANG DIPERBAIKI ==========
-        const YOUTUBE_VIDEO_ID = 'Ph94XLpDKm0';
+        // ========== KONFIGURASI ==========
         const WEDDING_DATE = new Date('December 14, 2025 00:00:00').getTime();
         
-        // URL Google Apps Script YANG BARU - SESUAI PERMINTAAN ANDA
+        // URL Google Apps Script
         const RSVP_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw7cs6A703qUueElvfir6qWr6mZKDtJzPtSi5SO7_cr2s69JGH6ZYvB3i1DLMiIJ7ScpQ/exec';
         
         const PHOTO_URLS = [
@@ -2116,9 +2186,6 @@
             'https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
         ];
         
-        let musicPlayer = null;
-        let isMusicPlaying = false;
-
         // Data komentar contoh
         const sampleComments = [
             {
@@ -2147,7 +2214,29 @@
             }
         ];
 
-        // ========== SISTEM RSVP YANG DIPERBAIKI (TANPA PESAN) ==========
+        // ========== ANIMASI BUNGA SAKURA ==========
+        function createSakuraAnimation() {
+            const sakuraContainer = document.getElementById('sakuraContainer');
+            if (!sakuraContainer) return;
+            
+            // Jenis bunga sakura yang berbeda
+            const sakuraTypes = ['sakura1', 'sakura2', 'sakura3', 'sakura4', 'sakura5'];
+            
+            // Buat 20 bunga sakura yang jatuh
+            for (let i = 0; i < 20; i++) {
+                const sakura = document.createElement('div');
+                const sakuraType = sakuraTypes[Math.floor(Math.random() * sakuraTypes.length)];
+                
+                sakura.className = `sakura ${sakuraType}`;
+                sakura.style.left = `${Math.random() * 100}%`;
+                sakura.style.animationDuration = `${10 + Math.random() * 15}s`;
+                sakura.style.animationDelay = `${Math.random() * 5}s`;
+                
+                sakuraContainer.appendChild(sakura);
+            }
+        }
+
+        // ========== SISTEM RSVP ==========
         async function submitRSVP() {
             console.log('=== MULAI SUBMIT RSVP ===');
             
@@ -2181,7 +2270,7 @@
             submitBtn.disabled = true;
 
             try {
-                // Format data yang sederhana dan jelas - TANPA PESAN
+                // Format data yang sederhana dan jelas
                 const formData = new URLSearchParams();
                 formData.append('nama', nama);
                 formData.append('email', email || 'Tidak diisi');
@@ -2195,7 +2284,7 @@
                     kehadiran: kehadiran
                 });
 
-                // Kirim ke Google Apps Script - PASTIKAN METHOD POST
+                // Kirim ke Google Apps Script
                 const response = await fetch(RSVP_SCRIPT_URL, {
                     method: 'POST',
                     headers: {
@@ -2433,7 +2522,6 @@
             
             const loadingScreen = document.getElementById('loadingScreen');
             const mainContent = document.getElementById('mainContent');
-            const musicControls = document.getElementById('musicControls');
             
             // Sembunyikan loading screen
             if (loadingScreen) {
@@ -2445,15 +2533,8 @@
                 mainContent.classList.remove('hidden');
             }
             
-            // Tampilkan kontrol musik
-            if (musicControls) {
-                musicControls.classList.remove('hidden');
-            }
-            
-            // Mulai musik
-            setTimeout(() => {
-                playWeddingMusic();
-            }, 500);
+            // Buat animasi bunga sakura
+            createSakuraAnimation();
             
             // Preload foto
             preloadPhoto();
@@ -2576,75 +2657,6 @@
                 photoLoading.style.color = '#b8a58d';
             }
         }
-        
-        function playWeddingMusic() {
-            try {
-                // Hentikan player lama jika ada
-                if (musicPlayer) {
-                    try {
-                        musicPlayer.src = 'about:blank';
-                        if (musicPlayer.parentNode) {
-                            musicPlayer.parentNode.removeChild(musicPlayer);
-                        }
-                    } catch (e) {
-                        console.log('Error membersihkan player lama:', e);
-                    }
-                }
-
-                // Buat player baru
-                musicPlayer = document.createElement('iframe');
-                musicPlayer.id = 'youtubePlayer';
-                musicPlayer.src = `https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&enablejsapi=1&rel=0&mute=0`;
-                musicPlayer.width = '0';
-                musicPlayer.height = '0';
-                musicPlayer.style.display = 'none';
-                musicPlayer.allow = 'autoplay; encrypted-media; accelerometer; gyroscope';
-                musicPlayer.allowFullscreen = false;
-                
-                document.body.appendChild(musicPlayer);
-                
-                isMusicPlaying = true;
-                updateMusicControls();
-                
-                console.log('Musik wedding dimulai');
-                
-            } catch (error) {
-                console.error('Error memutar musik:', error);
-            }
-        }
-        
-        function stopWeddingMusic() {
-            if (musicPlayer) {
-                try {
-                    musicPlayer.src = 'about:blank';
-                    isMusicPlaying = false;
-                    updateMusicControls();
-                } catch (error) {
-                    console.error('Error menghentikan musik:', error);
-                }
-            }
-        }
-        
-        function toggleMusic() {
-            if (isMusicPlaying) {
-                stopWeddingMusic();
-            } else {
-                playWeddingMusic();
-            }
-        }
-        
-        function updateMusicControls() {
-            const playPauseBtn = document.getElementById('playPauseBtn');
-            if (playPauseBtn) {
-                if (isMusicPlaying) {
-                    playPauseBtn.innerHTML = '⏸️';
-                    playPauseBtn.title = 'Pause Musik';
-                } else {
-                    playPauseBtn.innerHTML = '▶️';
-                    playPauseBtn.title = 'Play Musik';
-                }
-            }
-        }
 
         // ========== FUNGSI SALIN ==========
         function copyToClipboard(text, buttonElement = null) {
@@ -2752,18 +2764,6 @@
         
         // Event listeners
         document.addEventListener('DOMContentLoaded', function() {
-            // Setup event listeners untuk tombol musik
-            const playPauseBtn = document.getElementById('playPauseBtn');
-            const stopBtn = document.getElementById('stopBtn');
-            
-            if (playPauseBtn) {
-                playPauseBtn.addEventListener('click', toggleMusic);
-            }
-            
-            if (stopBtn) {
-                stopBtn.addEventListener('click', stopWeddingMusic);
-            }
-            
             // Mulai countdown
             updateCountdown();
             setInterval(updateCountdown, 1000);
